@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+  <meta http-equiv="content-type" content="text/html" charset="utf-8">
+  <meta http-equiv="content-script-type" content="text/javascript">
+  <title>入力欄付きウィンドウを開く</title>
+
+</head>
+
+<body>
+  <script type="text/javascript">
+
+  var yourName=window.prompt("入力欄に名前をお書きください。","ここに入力してください。");
+
+  if (yourName=="ここに入力してください。") {
+        document.write("<p>お名前の入力をお忘れになったようですね。</p>");
+  }else if (yourName=="" || yourName==mull){
+    document.write("<p>お名前の入力をしていただきたかったです。</p>");
+  }else {
+    document.write("<p>ようこそ"+yourName+"さん！条件分岐の理解も進んで来ましたね！</p>");
+  }
+
+  </script>
+</body>
+
+</html>
