@@ -6,13 +6,32 @@
 <meta http-equiv="content-script-type" content="text/javascript" />
 <title>id名を使用した命令</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
+<script type="text/javascript">
+
+  window.onload=function() {
+    document.getElementById("ttl").style.color="#090";
+    document.getElementById("ttl").style.fontSize="1.2em";
+  }
+
+  function rollOver() {
+    document.getElementById("cafeImg").setAttribute("src","img/photo01_s_on.jpg");
+  }
+
+  function rollOut() {
+        document.getElementById("cafeImg").setAttribute("src","img/photo01_s.jpg");
+  }
+
+</script>
+
+
 </head>
 
 <body>
 
 <h1 id="ttl">雑貨店の店内写真</h1>
 
-<p id="para"><a href="img/photo01.jpg"><img src="img/photo01_s.jpg" width="180" height="240" alt="雑貨店の店内" name="cafeImg" id="cafeImg" /></a></p>
+<p id="para"><a href="img/photo01.jpg" onmouseover="rollOver();" onmouseout="rollOut();zs"><img src="img/photo01_s.jpg" width="180" height="240" alt="雑貨店の店内" name="cafeImg" id="cafeImg" /></a></p>
 
 </body>
 </html>
