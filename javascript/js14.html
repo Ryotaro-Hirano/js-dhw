@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+  <meta http-equiv="content-type" content="text/html" charset="utf-8">
+  <meta http-equiv="content-script-type" content="text/javascript">
+  <title>for文の使用</title>
+
+</head>
+
+<body>
+  <p></p>
+
+  <form action="#" method="post">
+    <select id="birthYear" name="birthYear">
+      <option selected="selected">選択してください</option>
+      <script type="text/javascript">
+        for(i=1960;i<=2014;i++){
+          document.write("<option value='"+i+"'>"+"i"+"年</option>");
+
+        }
+
+      </script>
+    </select>
+  </form>
+</body>
+
+</html>
